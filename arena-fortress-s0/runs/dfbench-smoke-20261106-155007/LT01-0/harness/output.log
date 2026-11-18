@@ -1,0 +1,4 @@
+2026-11-06T20:50:27.189748880Z {"t": 1793998227.19, "kind": "start", "task": "Task('lt01-drought-s0', days=3, credits=0.0045, game=http://game:8090)", "model": "z-ai/glm-5.3-flash"}
+2026-11-06T20:50:27.208199130Z {"t": 1793998227.21, "kind": "setup", "task": "lt01-drought-s0", "days": 3, "hands_off": {"from_day": 0, "days": 21}, "credits": 0.0045}
+2026-11-06T20:50:37.431613218Z {"t": 1793998237.43, "kind": "advance", "days": 1, "day": 3, "stopped": null, "hands_off": true, "end": "horizon"}
+2026-11-06T20:50:37.431644509Z {"t": 1793998237.43, "kind": "done", "reason": "horizon", "stats": {"cycles": 1, "actions": 0, "rejected": 0, "advances": 1, "advisor_calls": 0, "advisor_actions": 0, "model_errors": 0}, "usage": {"calls": 0, "failed_calls": 0, "prompt_tokens": 0, "cached_tokens": 0, "completion_tokens": 0, "reasoning_tokens": 0, "cost_usd": 0.0, "cost_source": null, "rate_limit_waits": 0, "rate_limit_wait_s": 0.0}, "wall_s": 10.2}

@@ -1,0 +1,2 @@
+2026-11-06T20:50:10.233589761Z {"listening": "0.0.0.0:8090", "task": "lt01-drought-s0", "key": "dfbench/v3|api=v0|tools=78ed1c6f|sem=57cb3766|obs=8:d6337d18|dfset=noart:155e4ad9|rules=K40.A28.W600:fb245e5c|score=7:67b88548|task=lt01-drought-s0:ea9b6cd5|df=53.16|dfhack=53.16-r2|model=z-ai/glm-5.3-flash:56a8cbb7|budget=5255e34a", "out": "/artifacts"}
+2026-11-06T20:50:25.344075129Z {"phase": "ready", "day": 0, "tick": 828100, "days_left": 3, "game_over": false, "hands_off_in_days": 0}

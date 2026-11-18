@@ -1,0 +1,118 @@
+{
+ "score": {
+  "score": 0.0,
+  "metrics": {
+   "stage": 2,
+   "promotable": true,
+   "point": 0.0,
+   "lb95": 0.0,
+   "ub95": 0.0,
+   "LT01": "pass 0/1, partial 0.00, z 0.00",
+   "family_labs": 0.0,
+   "credits_per_game_year": 0.0,
+   "calls_per_game_year": 0.0,
+   "model_latency_s_per_call": null,
+   "reasoning_tokens_per_call": null,
+   "completion_tokens_per_call": null,
+   "wall_h_per_game_year": 0.84,
+   "wall_capped": 0,
+   "actions_per_game_year": 0.0,
+   "actions_rejected_per_game_year": 0.0,
+   "throttle_wait_s": 0.0,
+   "credits_exhausted": 0,
+   "subscores": null,
+   "tiers": null,
+   "games": "1 scored / 1 run",
+   "infra_excluded": 0,
+   "crash_twice": 0,
+   "game_years": 0.01,
+   "credits_usd": 0.0,
+   "harness_digest": "sha256:f925e72ba300f5108d8791dc90c0640bcf479a9637297c62a10209affd7b3852",
+   "key": "dfbench/v3|api=v0|tools=78ed1c6f|sem=57cb3766|obs=8:d6337d18|dfset=noart:155e4ad9|rules=K40.A28.W600:fb245e5c|score=7:67b88548|task=lt01-drought-s0:ea9b6cd5|df=53.16|dfhack=53.16-r2|model=z-ai/glm-5.3-flash:56a8cbb7|budget=5255e34a",
+   "price_table_hash": "sha256:fake-price-table",
+   "suite": "smoke-LT01",
+   "score_version": "s0-score/1",
+   "runner": "s0-runner/1",
+   "anchors": "lab z: noop 0 / witness 1 on mean partial (bench/predicates.py). SIGNED OFF 2026-10-27 (D23): native x86_64, GitHub-hosted, run 40598507498 (runner/ci/anchors.yml), on the season-0 PRIVATE pool (commitment sha256:d38cc2dc\u2026, 4 forts per task) with outcome score v6: noop x8 and witness x8 per task, strange moods off except LT03. They replace the Rosetta anchors of runs/s0-pool-2026-10-26 (noop identical; witness LT01 1.0 -> 0.9688, LT02 0.9126 -> 0.8821, LT03 1.0, LT08 0.9116 -> 0.9046, all within ~1-1.5 SE). Aggregates only: runs/s0-noise-2026-10-27",
+   "result_kind": "local",
+   "stack": "mixed",
+   "scope": "smoke",
+   "tasks_played": "LT01",
+   "anchors_id": "season0/native/final/run40598507498",
+   "official_comparable": false,
+   "bootstrap": "stratified by task, 10000 resamples, seed 20261023",
+   "lab_z_below_minus1": null
+  }
+ },
+ "families": {
+  "labs": 0.0
+ },
+ "weights": {
+  "OP1": 0.5,
+  "MY1": 0.3,
+  "labs": 0.2
+ },
+ "anchors": {
+  "LT01": {
+   "noop": 0.0,
+   "witness": 0.9688
+  }
+ },
+ "games": [
+  {
+   "game_id": "LT01-0",
+   "task": "LT01",
+   "kind": "lab",
+   "family": "labs",
+   "stage": 1,
+   "k": 0,
+   "status": "ok",
+   "notes": [],
+   "ledger": {
+    "calls": 0,
+    "ok_calls": 0,
+    "refused": 0,
+    "refused_budget": 0,
+    "upstream_errors": 0,
+    "upstream_errors_provider": 0,
+    "upstream_timeouts": 0,
+    "usage_missing": 0,
+    "cost_usd": 0.0,
+    "prompt_tokens": 0,
+    "cached_tokens": 0,
+    "completion_tokens": 0,
+    "reasoning_tokens": 0,
+    "throttle_wait_s": 0.0,
+    "latency_s": 0.0,
+    "price_table_hash": null
+   },
+   "blocked_reason": null,
+   "price_table_hash": "sha256:fake-price-table",
+   "throttle_wait_s": 0.0,
+   "days": 3.0,
+   "wall_s": 27,
+   "wall_capped": false,
+   "finished_by": null,
+   "actions_used": 0,
+   "actions_rejected": 0,
+   "harness_digest": "sha256:f925e72ba300f5108d8791dc90c0640bcf479a9637297c62a10209affd7b3852",
+   "key": "dfbench/v3|api=v0|tools=78ed1c6f|sem=57cb3766|obs=8:d6337d18|dfset=noart:155e4ad9|rules=K40.A28.W600:fb245e5c|score=7:67b88548|task=lt01-drought-s0:ea9b6cd5|df=53.16|dfhack=53.16-r2|model=z-ai/glm-5.3-flash:56a8cbb7|budget=5255e34a",
+   "O": 25.0,
+   "tier": 1,
+   "s": {
+    "survival": 1.0,
+    "supply": 0.0,
+    "wellbeing": 1.0,
+    "growth": 0.0
+   },
+   "partial": 0.0,
+   "passed": false,
+   "clauses": [
+    true,
+    true,
+    false,
+    false
+   ]
+  }
+ ]
+}

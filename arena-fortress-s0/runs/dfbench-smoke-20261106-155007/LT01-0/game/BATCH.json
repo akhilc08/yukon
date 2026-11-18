@@ -1,0 +1,73 @@
+{
+ "schema": "dfbench-batch/0",
+ "note": "dfbench/v3: game API v0 (docs/GAME-API.md); the harness is the submission",
+ "harness": {
+  "bench": "dfbench/v3",
+  "api": "v0",
+  "facts": "gameapi.facts",
+  "tools_hash": "78ed1c6f88f645ac4cc8408b6c430e5019f85b08288d9d4637ac50addb79b7fa",
+  "tool_semantics_hash": "57cb37662af7385437cb2452959e409bc0d6894ca5dc35fc8c2eb4d0aaec988f",
+  "obs_schema": 8,
+  "obs_schema_hash": "d6337d18cda185dd2644a1124c96743a6e782632c655a80cecc53bce0fad4eef",
+  "df_settings": {
+   "init.txt": {
+    "FPS_CAP": "10000",
+    "PRINT_MODE": "TEXT"
+   },
+   "d_init.txt": {
+    "AUTOSAVE": "NONE",
+    "MULTITHREADING": "NO",
+    "ARTIFACTS": "NO"
+   }
+  },
+  "df_settings_hash": "155e4ad94b536f4303e0ec433a6c989a6b65ff880205ac7e2d28eb60556bddfc",
+  "rules": {
+   "actions_per_game_day": 40,
+   "max_advance_days": 28,
+   "wall_s": 600
+  },
+  "rules_hash": "fb245e5cd5d33b521e7408d7d5c3175a442038176c9a63a8b9574aeefec2ffc1",
+  "score_version": 7,
+  "score_hash": "67b885481dd16e413101c6f044555a06a3682bd481763238bf0a71f384f4b1c5",
+  "df": "53.16",
+  "dfhack": "53.16-r2",
+  "model": {
+   "model": "z-ai/glm-5.3-flash",
+   "price_table_hash": "sha256:547d7f992e4e8356cadf8fd92428e475b28b791c25e7728c9f1b0d209d857162"
+  },
+  "model_hash": "56a8cbb74ebe4502047f2b9206cbc861a6da392eebd44ae8d41ee19407e8b317"
+ },
+ "tasks": {
+  "lt01-drought-s0": {
+   "task": "lt01-drought-s0",
+   "task_hash": "ea9b6cd51c6f2a96b5e534c8554b7b5723dbd56cdf8e95dc5518a5b0223137c0",
+   "budget": {
+    "credits": 0.0045,
+    "unit": "USD at the pinned reference prices",
+    "per": "game",
+    "days": 3
+   },
+   "budget_hash": "5255e34a54995fb3b07c0845ad7f7fd14d03af21dded597c186aee9a3ca27b03",
+   "key": "dfbench/v3|api=v0|tools=78ed1c6f|sem=57cb3766|obs=8:d6337d18|dfset=noart:155e4ad9|rules=K40.A28.W600:fb245e5c|score=7:67b88548|task=lt01-drought-s0:ea9b6cd5|df=53.16|dfhack=53.16-r2|model=z-ai/glm-5.3-flash:56a8cbb7|budget=5255e34a"
+  }
+ },
+ "invocations": [
+  {
+   "at": "2026-11-06T20:50:10Z",
+   "key": "dfbench/v3|api=v0|tools=78ed1c6f|sem=57cb3766|obs=8:d6337d18|dfset=noart:155e4ad9|rules=K40.A28.W600:fb245e5c|score=7:67b88548|task=lt01-drought-s0:ea9b6cd5|df=53.16|dfhack=53.16-r2|model=z-ai/glm-5.3-flash:56a8cbb7|budget=5255e34a",
+   "condition": {
+    "arm": "harness",
+    "k": 0,
+    "seed": 12345,
+    "run_id": "dfb-lt01-0-7d47b3",
+    "harness_digest": "sha256:f925e72ba300f5108d8791dc90c0640bcf479a9637297c62a10209affd7b3852",
+    "facts": "gameapi.facts",
+    "fake": false
+   },
+   "argv": [
+    "--port",
+    "8090"
+   ]
+  }
+ ]
+}

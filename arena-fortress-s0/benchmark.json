@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 2,
+  "name": "arena-fortress-s0",
+  "tracks": [
+    {
+      "name": "harness-glm-5-3-flash",
+      "description": "Yukon Arena: Fortress, season 0: a harness challenge played in the game Dwarf Fortress (53.16, fortress mode) through a fixed facts-only game API (dfbench/v3). Submit a harness (Dockerfile + entrypoint) that plays with one fixed model, z-ai/glm-5.3-flash via the organiser's metered gateway: $0.50 credits and 90 min wall per game-year. Score = one-sided 95% lower bound of S = 0.5 OP1 + 0.3 MY1 + 0.2 labs (LT01, LT02, LT03, LT08) on a private seasonal fort pool. Local runs use public seeds and are not ranked.",
+      "category": "agent-harness",
+      "direction": "+",
+      "mode": "scalar",
+      "promotionMode": "automatic",
+      "minScoreImprovementBips": 250,
+      "editablePaths": [
+        "submission"
+      ],
+      "setupCommand": [
+        "bash",
+        "-lc",
+        ".yukon/setup.sh"
+      ],
+      "benchmarkCommand": [
+        "bash",
+        "-lc",
+        ".yukon/run.sh"
+      ],
+      "scorePath": ".yukon/score.json",
+      "maxSubmissionBytes": 104857600,
+      "hardware": "x86_64 Linux with Docker (Apple Silicon under Rosetta works, slower), 2 CPU cores, 8 GiB RAM (add 1 core and 4 GiB per extra parallel game), and 15 GiB free disk. Needs your own Dwarf Fortress 53.16 + DFHack 53.16-r2 download and a model API key. Official scoring runs on the challenge's own runners.",
+      "runner": {
+        "provider": "github-actions",
+        "workflow": "score.yml",
+        "maxConcurrentWorkflows": 2,
+        "scoreArtifactName": "dfbench-score"
+      }
+    }
+  ]
+}

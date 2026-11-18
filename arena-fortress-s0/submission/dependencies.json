@@ -1,0 +1,27 @@
+[
+ {
+  "submissionId": "7ed9f09a-43e3-4544-aaab-ccbbbb0c0d3e",
+  "rationale": "My own first submission of this harness (failed by the early judge before any game, a judge bug per the organisers). This submission is that harness with the changes listed in NOTE.md ('Changes since the first archive').",
+  "evidence": "submission/fort/, submission/Dockerfile, submission/dfbench_client/ are the base of the files of 7ed9f09a."
+ },
+ {
+  "submissionId": "39568f5e-40f6-40f0-bb58-a6a2e97b20ba",
+  "rationale": "My own resubmission of the same harness, failed by the early judge before any game for not declaring 7ed9f09a. This submission is that harness with the changes listed in NOTE.md.",
+  "evidence": "submission/fort/, submission/Dockerfile, submission/dfbench_client/ are the base of the files of 39568f5e."
+ },
+ {
+  "submissionId": "252898ac-9aab-41ef-b7c0-03e4aa0e5f4d",
+  "rationale": "My own third archive of this harness, the first to play (stage 1). This submission is that harness with the changes listed in NOTE.md ('Changes since the first archive').",
+  "evidence": "submission/fort/ (every module), submission/Dockerfile and submission/dfbench_client/ are the base of this submission's files."
+ },
+ {
+  "submissionId": "fa9c13cc-2503-4df4-b989-6a0f49b3cbd4",
+  "rationale": "i34-9's promoted submission (main when this revision was made). Its endgame supply step was read and its idea reimplemented here: from about two months before an open-play horizon, a second daily brew order with a high drink cap above a plant reserve, an extra barrel order, and a meal order from surplus food, plus butchering earlier when food runs short. No code was taken; the harness structure, thresholds and order keys are this harness's own.",
+  "evidence": "submission/fort/playbook.py (ENDGAME_DAYS, endgame, endgame_orders) and submission/fort/crisis.py (food_steps, the closing threshold), against fa9c13cc's submission/overseer/harness.py endgame_supply."
+ },
+ {
+  "submissionId": "0bc9b753-d53c-4c1d-b23f-92e645821a02",
+  "rationale": "mpjunior92's note, where the idea of raising the brewing target during the final stretch of a long game comes from (fa9c13cc credits it there). Credited for the idea; nothing was taken from its code.",
+  "evidence": "submission/fort/playbook.py endgame_orders, against that note."
+ }
+]

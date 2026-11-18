@@ -1,0 +1,40 @@
+{
+ "schema": "dfbench-task/1",
+ "run_id": "dfb-lt01-0-7d47b3",
+ "api": "v0",
+ "game_url": "http://game:8090",
+ "model": {
+  "base_url": "http://gateway:8080/v1",
+  "name": "z-ai/glm-5.3-flash",
+  "api": "openai-chat",
+  "api_key": "placeholder",
+  "prices": {
+   "input": 0.15,
+   "cached_input": 0.03,
+   "output": 0.5,
+   "unit": "USD per million tokens",
+   "price_table_hash": "sha256:547d7f992e4e8356cadf8fd92428e475b28b791c25e7728c9f1b0d209d857162"
+  }
+ },
+ "budget": {
+  "credits": 0.0045,
+  "unit": "USD at the pinned reference prices",
+  "per": "game"
+ },
+ "limits": {
+  "wall_s": 600,
+  "actions_per_game_day": 40,
+  "max_advance_days": 28
+ },
+ "task": {
+  "name": "lt01-drought-s0",
+  "days": 3,
+  "goal": "From day 39 you can't act for 21 days. Keep drink in stock every day of that window, brew at least one batch of drink inside it, and end with at least one drink per dwarf. No dwarf may die.",
+  "brief": "All of the fortress's drink has just been lost.",
+  "hands_off": {
+   "from_day": 0,
+   "days": 21
+  },
+  "strange_moods": false
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "schema": "dfbench-game/1",
+ "run_id": "dfb-lt01-0-7d47b3",
+ "arm": "harness",
+ "k": 0,
+ "seed": 12345,
+ "scenario": "scenarios/season0/lt01-drought.json",
+ "scenario_path": "/dfbench/scenario.json",
+ "days": 3,
+ "strange_moods": false,
+ "artifacts_dir": "/artifacts",
+ "ledger_path": "/ledger/usage.jsonl",
+ "gateway_status_path": "/ledger/gateway-status.json",
+ "gateway_url": "http://gateway:8080",
+ "harness_digest": "sha256:f925e72ba300f5108d8791dc90c0640bcf479a9637297c62a10209affd7b3852",
+ "budget": {
+  "credits": 0.0045,
+  "unit": "USD at the pinned reference prices",
+  "per": "game"
+ },
+ "rules": {
+  "actions_per_game_day": 40,
+  "max_advance_days": 28,
+  "wall_s": 600.0
+ }
+}

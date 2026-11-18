@@ -1,0 +1,14 @@
+{
+ "runner": "s0-runner/1",
+ "argv": [
+  "local",
+  "smoke",
+  "--harness",
+  "submission/"
+ ],
+ "started": "2026-11-06T15:50:08",
+ "harness_image": "dfb-harness:f925e72ba300f510",
+ "harness_digest": "sha256:f925e72ba300f5108d8791dc90c0640bcf479a9637297c62a10209affd7b3852",
+ "stack": "mixed",
+ "model": "z-ai/glm-5.3-flash"
+}

@@ -1,0 +1,51 @@
+{
+ "schema": "dfbench-suite/1",
+ "name": "smoke-LT01",
+ "seed": 12345,
+ "rules": {
+  "actions_per_game_day": 40,
+  "max_advance_days": 28
+ },
+ "budget_usd_per_game_year": 0.5,
+ "wall_s_per_game_year": 5400,
+ "weights": {
+  "OP1": 0.5,
+  "MY1": 0.3,
+  "labs": 0.2
+ },
+ "bootstrap": {
+  "resamples": 10000,
+  "seed": 20261023,
+  "alpha": 0.05
+ },
+ "lab_z": {
+  "cap": 1.5,
+  "floor": null,
+  "note": "BENCHMARK-v1 \u00a73.2: capped at 1.5, not floored (harm shows)"
+ },
+ "infra": {
+  "max_upstream_error_share": 0.1,
+  "max_throttle_share": 0.5,
+  "note": "a game is an infra re-run if usage was unknown on any call, provider-side upstream errors (5xx, 429, unreachable; not 4xx) exceed 10% of >= 10 calls, or throttle waits exceed half the game's wall time"
+ },
+ "anchors_note": "lab z: noop 0 / witness 1 on mean partial (bench/predicates.py). SIGNED OFF 2026-10-27 (D23): native x86_64, GitHub-hosted, run 40598507498 (runner/ci/anchors.yml), on the season-0 PRIVATE pool (commitment sha256:d38cc2dc\u2026, 4 forts per task) with outcome score v6: noop x8 and witness x8 per task, strange moods off except LT03. They replace the Rosetta anchors of runs/s0-pool-2026-10-26 (noop identical; witness LT01 1.0 -> 0.9688, LT02 0.9126 -> 0.8821, LT03 1.0, LT08 0.9116 -> 0.9046, all within ~1-1.5 SE). Aggregates only: runs/s0-noise-2026-10-27",
+ "anchors_from": "season0",
+ "tasks": [
+  {
+   "id": "LT01",
+   "kind": "lab",
+   "family": "labs",
+   "predicate": "LT01",
+   "scenario": "scenarios/season0/lt01-drought.json",
+   "n": 1,
+   "stage": 1,
+   "wall_s": 600,
+   "anchor": {
+    "noop": 0.0,
+    "witness": 0.9688
+   },
+   "days": 3
+  }
+ ],
+ "smoke": true
+}
